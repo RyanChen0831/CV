@@ -1,91 +1,126 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <title>個人履歷 - 軟體工程師</title>
-  <style>
-    body {
-      font-family: "Microsoft JhengHei", Arial, sans-serif;
-      margin: 40px auto;
-      max-width: 900px;
-      line-height: 1.6;
-      color: #333;
-    }
-    h1, h2, h3 {
-      margin-bottom: 5px;
-    }
-    h1 {
-      font-size: 28px;
-      border-bottom: 2px solid #333;
-      padding-bottom: 5px;
-    }
-    h2 {
-      margin-top: 30px;
-      font-size: 22px;
-      border-left: 5px solid #555;
-      padding-left: 10px;
-    }
-    .job, .project {
-      margin-bottom: 20px;
-    }
-    ul {
-      margin-top: 5px;
-    }
-    .tech {
-      font-style: italic;
-      color: #555;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>陳威翔 - 履歷</title>
 </head>
 <body>
-  <h1>個人履歷</h1>
-  <p><strong>職稱：</strong>軟體工程師</p>
-  <p><strong>年資：</strong>2 年</p>
 
-  <h2>工作經歷</h2>
-  <div class="job">
-    <h3>2023/7 ~ Now　建騰創達科技股份有限公司</h3>
-    <p>職稱：軟體工程師</p>
-  </div>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-pic-container">
+                <img src="placeholder.png" alt="陳威翔 大頭照" class="profile-pic">
+            </div>
+            <h1>陳威翔</h1>
 
-  <h2>專案經驗</h2>
+            <section class="sidebar-section contact-info">
+                <h2>聯絡方式</h2>
+                <p><strong>Phone:</strong> <a href="tel:0989-073-758">0989-073-758</a></p>
+                <p><strong>Email:</strong> <a href="mailto:mike86831@gmail.com">mike86831@gmail.com</a></p>
+            </section>
 
-  <div class="project">
-    <h3>客戶關係管理系統 (CRM)</h3>
-    <p><strong>角色：</strong>RD</p>
-    <p><strong>專案內容：</strong>內部人員維護公司客戶關係之系統</p>
-    <p><strong>工作內容：</strong></p>
-    <ul>
-      <li>系統維運及功能開發</li>
-      <li>負責關鍵字搜尋模組優化，提高查詢效率</li>
-    </ul>
-    <p class="tech">開發技術：.NET Framework 4.7、jQuery、Vue.js　|　資料庫：MSSQL</p>
-  </div>
+            <section class="sidebar-section">
+                <h2>學歷</h2>
+                <div class="education-item">
+                    <p class="date">2015/9 – 2019/6</p>
+                    <p class="major">電機工程學系</p>
+                    <p class="school">龍華科技大學</p>
+                </div>
+                <div class="education-item">
+                    <p class="date">2012/9 – 2015/6</p>
+                    <p class="major">電機科</p>
+                    <p class="school">新北市立瑞芳高級工業職業學校</p>
+                </div>
+            </section>
 
-  <div class="project">
-    <h3>規則引擎系統 (Rule Engine)</h3>
-    <p><strong>角色：</strong>RD / 系統開發主導</p>
-    <p><strong>專案內容：</strong>提供客戶條件驗證與規則管理平台</p>
-    <p><strong>工作內容：</strong></p>
-    <ul>
-      <li>設計並實作規則樹結構 (IRuleNode)，支援複雜條件判斷</li>
-      <li>開發 ASP.NET Web Forms + Vue.js 前端互動式規則設定介面</li>
-      <li>優化 SQL 效能，提升大筆資料批次驗證效率</li>
-    </ul>
-    <p class="tech">開發技術：C#、ADO.NET、Vue.js　|　資料庫：MSSQL</p>
-  </div>
+            <section class="sidebar-section">
+                <h2>技能</h2>
+                <ul class="skills-list">
+                    <li>C#</li>
+                    <li>ASP.NET CORE MVC</li>
+                    <li>SQL Server</li>
+                    <li>Vue.js</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JQuery</li>
+                    <li>Dapper</li>
+                </ul>
+            </section>
+        </aside>
 
-  <div class="project">
-    <h3>SRM 供應商管理系統</h3>
-    <p><strong>角色：</strong>RD</p>
-    <p><strong>專案內容：</strong>內部供應商資料與流程管理</p>
-    <p><strong>工作內容：</strong></p>
-    <ul>
-      <li>新功能開發與維護</li>
-      <li>整合外部 API，改善內部流程自動化</li>
-    </ul>
-    <p class="tech">開發技術：.NET Framework 4.7、jQuery　|　資料庫：MSSQL</p>
-  </div>
+        <main class="main-content">
+            <section class="about-me">
+                <h2>自我介紹</h2>
+                <p>
+                    你好，我是陳威翔，畢業於龍華科技大學電機工程系，目前任職於建騰科技股份有限公司，專注於企業內部系統的開發與維運，從基礎的資料存取到模組設計，皆有實際開發經驗。
+                </p>
+            </section>
+            <section class="work-experience">
+                <h2>工作經歷</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>建騰科技股份有限公司 | <span>軟體工程師</span></h3>
+                        <p class="date">2023/07 – Now</p>
+                        <ul>
+                            <li><strong> 關鍵字驗證模組（主導開發)</strong>
+                                <ul>
+                                    <li>設計並實作規則樹結構，支援條件判斷設計規則來動態組裝驗證的規則並生成 SQL 語法進行資料查詢</li>
+                                    <li>開發 ASP.NET Web Forms + Vue.js 前後端互動式規則設定介面，使用 ADO.NET 操作 MSSQL 資料庫，並整合 Vue2 與 jQuery 顯示結果</li>
+                                    <li>優化 SQL 效能，提升大量資料批次查詢效率</li>
+                                </ul>
+                            </li>
+                            <li><strong>SRM / CRM 系統維護與擴充開發</strong>
+                                <ul>
+                                    <li>負責公司內部 SRM / CRM 系統的日常維護與功能開發</li>
+                                    <li>擴充功能、報表匯出與使用者權限模組，優化使用體驗</li>
+                                    <li>處理回報問題，確保系統穩定性並持續優化程式結構</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects">
+                <h2>作品</h2>
+                <div class="project-item">
+                    <h3>Side Project｜甜點電商平台</h3>
+                    <p class="date">2025.03 – Now</p>
+                    <p><strong>專案簡介</strong></p>
+                    <p>電商網站，模擬會員註冊、購物車、結帳等功能流程，採用分層式架構開發，實作完整登入驗證與金流流程。</p>
+                    <p><strong>技術</strong></p>
+                    <ul>
+                        <li>採用 Controller / Service / Repository 分層架構，提升程式可讀性與可維護性</li>
+                        <li>登入流程實作 JWT Token 驗證，實現會員權限控制與身份驗證</li>
+                        <li>使用 Redis 快取會員購物車內容，提升頁面讀取效能</li>
+                        <li>串接藍新金流 API，實作模擬商品付款與訂單流程</li>
+                        <li>使用 FluentValidation 實作後端資料驗證，確保資料的完整性與格式正確</li>
+                        <li>實作全站統一的錯誤處理與回應格式 (Error Handling & Response Wrapper)，提升 API 一致性與除錯效率</li>
+                    </ul>
+                    <p class="github-link"><a href="https://github.com/RyanChen0831/SideProject">GitHub連結</a></p>
+                </div>
+            </section>
+            
+            <section class="education-history">
+                <h2>進修經歷</h2>
+                <div class="project-item">
+                    <h3>微軟智慧應用 C# 全端工程師養成班 (Tibame x 商研院)</h3>
+                    <p class="date">2023.02 - 2023.06</p>
+                    <ul>
+                        <li>系統性學習 C#、ASP.NET Core MVC、SQL Server、Vue.js、JavaScript、HTML/CSS、WebAPI、Git等前後端開發技術</li>
+                        <li>實作專題《日安 PetDaily》寵物服務平台，負責寵物商城前台開發與藍新金流串接</li>
+                        <li>應用 Vue.js 前端框架與 ASP.NET Core MVC 後端建置，利用 Axios 向 Controller Action 發送請求並操作資料庫</li>
+                        <li>強化前後端開發流程、RESTful 設計與資料庫正規化的理解</li>
+                    </ul>
+                     <p class="github-link"><a href="https://github.com/RyanChen0831/FourthTeamProject">GitHub連結</a></p>
+                </div>
+            </section>
+
+        </main>
+    </div>
 
 </body>
 </html>
