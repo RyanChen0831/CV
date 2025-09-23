@@ -110,7 +110,6 @@ body {
 }
 
 .skills-list li {
-    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 4px;
     padding: 8px 12px;
     margin-bottom: 8px;
@@ -222,3 +221,4 @@ body {
         padding: 30px 20px;
     }
 }
+
