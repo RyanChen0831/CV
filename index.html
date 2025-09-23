@@ -1,59 +1,91 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <title>我的履歷</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-            max-width: 800px;
-        }
-        img {
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        h1 {
-            margin-bottom: 5px;
-        }
-        h2 {
-            margin-top: 30px;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>個人履歷 - 軟體工程師</title>
+  <style>
+    body {
+      font-family: "Microsoft JhengHei", Arial, sans-serif;
+      margin: 40px auto;
+      max-width: 900px;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1, h2, h3 {
+      margin-bottom: 5px;
+    }
+    h1 {
+      font-size: 28px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+    h2 {
+      margin-top: 30px;
+      font-size: 22px;
+      border-left: 5px solid #555;
+      padding-left: 10px;
+    }
+    .job, .project {
+      margin-bottom: 20px;
+    }
+    ul {
+      margin-top: 5px;
+    }
+    .tech {
+      font-style: italic;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-    <h1>陳威翔</h1>
-    <img src="me.jpg" alt="個人照片" width="150">
+  <h1>個人履歷</h1>
+  <p><strong>職稱：</strong>軟體工程師</p>
+  <p><strong>年資：</strong>2 年</p>
 
-    <p><strong>後端工程師</strong>，2 年經驗，專長 C# / ASP.NET Core / SQL Server。</p>
+  <h2>工作經歷</h2>
+  <div class="job">
+    <h3>2023/7 ~ Now　建騰創達科技股份有限公司</h3>
+    <p>職稱：軟體工程師</p>
+  </div>
 
-    <h2>工作經歷</h2>
+  <h2>專案經驗</h2>
+
+  <div class="project">
+    <h3>客戶關係管理系統 (CRM)</h3>
+    <p><strong>角色：</strong>RD</p>
+    <p><strong>專案內容：</strong>內部人員維護公司客戶關係之系統</p>
+    <p><strong>工作內容：</strong></p>
     <ul>
-        <li><strong>建騰創達科技</strong>（2023/07 ~ Now）  
-            - 內部系統開發與維運  
-            - CRM 系統開發、SRM 擴充、規則模組設計
-        </li>
+      <li>系統維運及功能開發</li>
+      <li>負責關鍵字搜尋模組優化，提高查詢效率</li>
     </ul>
+    <p class="tech">開發技術：.NET Framework 4.7、jQuery、Vue.js　|　資料庫：MSSQL</p>
+  </div>
 
-    <h2>專案經驗</h2>
+  <div class="project">
+    <h3>規則引擎系統 (Rule Engine)</h3>
+    <p><strong>角色：</strong>RD / 系統開發主導</p>
+    <p><strong>專案內容：</strong>提供客戶條件驗證與規則管理平台</p>
+    <p><strong>工作內容：</strong></p>
     <ul>
-        <li>客戶關係管理系統 (CRM)</li>
-        <li>供應商管理系統 (SRM) 擴充</li>
-        <li>規則驗證模組 (Rule Engine)</li>
+      <li>設計並實作規則樹結構 (IRuleNode)，支援複雜條件判斷</li>
+      <li>開發 ASP.NET Web Forms + Vue.js 前端互動式規則設定介面</li>
+      <li>優化 SQL 效能，提升大筆資料批次驗證效率</li>
     </ul>
+    <p class="tech">開發技術：C#、ADO.NET、Vue.js　|　資料庫：MSSQL</p>
+  </div>
 
-    <h2>技能</h2>
+  <div class="project">
+    <h3>SRM 供應商管理系統</h3>
+    <p><strong>角色：</strong>RD</p>
+    <p><strong>專案內容：</strong>內部供應商資料與流程管理</p>
+    <p><strong>工作內容：</strong></p>
     <ul>
-        <li>C#, ASP.NET Core, Web API</li>
-        <li>SQL Server, ADO.NET</li>
-        <li>Vue.js, jQuery</li>
-        <li>Redis, JWT 驗證</li>
+      <li>新功能開發與維護</li>
+      <li>整合外部 API，改善內部流程自動化</li>
     </ul>
+    <p class="tech">開發技術：.NET Framework 4.7、jQuery　|　資料庫：MSSQL</p>
+  </div>
 
-    <h2>學歷</h2>
-    <p>2023 年 C# 全端工程師養成班</p>
 </body>
 </html>
