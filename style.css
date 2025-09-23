@@ -1,0 +1,224 @@
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --text-color: #333;
+    --light-gray: #f4f4f4;
+    --border-color: #e0e0e0;
+}
+
+body {
+    font-family: 'Helvetica Neue', 'Microsoft JhengHei', 'PingFang TC', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.sidebar {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 30px;
+    width: 35%;
+    box-sizing: border-box;
+}
+
+.main-content {
+    padding: 30px 40px;
+    width: 65%;
+    box-sizing: border-box;
+}
+
+.profile-pic-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+}
+
+.sidebar h1 {
+    text-align: center;
+    font-size: 28px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.sidebar-section {
+    margin-top: 35px;
+}
+
+.sidebar-section h2 {
+    font-size: 20px;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.education-item, .skills-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.education-item p {
+    margin: 0;
+}
+
+.education-item .date {
+    font-size: 14px;
+    color: #bdc3c7;
+    margin-bottom: 5px;
+}
+.education-item .major {
+    font-weight: bold;
+}
+.education-item .school {
+    font-size: 15px;
+}
+
+.education-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.skills-list li {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.main-content h2 {
+    font-size: 24px;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 5px;
+    bottom: 5px;
+    width: 2px;
+    background: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid var(--secondary-color);
+}
+
+.timeline-item h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.timeline-item h3 span {
+    font-weight: normal;
+    color: #555;
+}
+
+.timeline-item .date {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.timeline-item ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.timeline-item ul li {
+    margin-bottom: 8px;
+}
+
+.project-item {
+    margin-bottom: 30px;
+}
+.project-item h3 {
+    margin: 0;
+    font-size: 18px;
+}
+.project-item .date {
+        color: #777;
+        font-size: 14px;
+        margin-bottom: 10px;
+}
+.project-item ul {
+    padding-left: 20px;
+}
+.project-item ul li {
+    margin-bottom: 5px;
+}
+
+.github-link {
+    font-size: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 0;
+        border-radius: 0;
+    }
+    .sidebar, .main-content {
+        width: 100%;
+    }
+    .main-content {
+        padding: 30px 20px;
+    }
+}
